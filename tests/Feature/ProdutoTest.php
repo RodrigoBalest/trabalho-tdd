@@ -31,5 +31,7 @@ class ProdutoTest extends TestCase
         $response = $this->post('/produtos', $attrs);
 
         $this->assertDatabaseHas('produtos', $attrs);
+
+        $this->get('/produtos')->assertSee($attrs['nome']);
     }
 }
