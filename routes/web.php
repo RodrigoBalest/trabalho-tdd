@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Produto;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/produtos', function () {
+    Produto::create(request([
+        'nome',
+        'descricao',
+        'lance_minimo',
+        'ordem',
+        'valor_buyout'
+    ]));
 });
