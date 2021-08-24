@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.836510">
-    <testsuite name="Feature" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.836510">
-      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.836510">
-        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="0" time="3.836510">
+  <testsuite name="" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.620165">
+    <testsuite name="Feature" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.620165">
+      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.620165">
+        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="0" time="3.620165">
           <error type="Illuminate\Database\QueryException">Tests\Feature\ProdutoTest::um_produto_pode_ser_criado
-Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: produtos.descricao (SQL: insert into "produtos" ("nome", "updated_at", "created_at") values (Accusamus, 2021-08-24 23:43:06, 2021-08-24 23:43:06))
+Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: produtos.lance_minimo (SQL: insert into "produtos" ("nome", "descricao", "updated_at", "created_at") values (Laboriosam, Modi occaecati eos sapiente provident quo quia aut., 2021-08-24 23:45:29, 2021-08-24 23:45:29))
 
 /home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Connection.php:692
 /home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Connection.php:652
