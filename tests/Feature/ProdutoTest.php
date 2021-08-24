@@ -17,6 +17,8 @@ class ProdutoTest extends TestCase
      */
     public function um_produto_pode_ser_criado()
     {
+        $this->withoutExceptionHandling();
+
         $lanceMinimo = $this->faker->randomFloat(2);
         $attrs = [
             'nome' => ucfirst($this->faker->word()),
