@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.623517">
-    <testsuite name="Feature" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.623517">
-      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.623517">
-        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="0" time="3.623517">
-          <error type="Error">Tests\Feature\ProdutoTest::um_produto_pode_ser_criado
-Error: Class "App\Models\Produto" not found
+  <testsuite name="" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.211547">
+    <testsuite name="Feature" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.211547">
+      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="0" errors="1" warnings="0" failures="0" skipped="0" time="3.211547">
+        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="0" time="3.211547">
+          <error type="Illuminate\Database\Eloquent\MassAssignmentException">Tests\Feature\ProdutoTest::um_produto_pode_ser_criado
+Illuminate\Database\Eloquent\MassAssignmentException: Add [nome] to fillable property to allow mass assignment on [App\Models\Produto].
 
-/home/vagrant/tdd/routes/web.php:18
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:399
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:197
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:462
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:1317
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php:870
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:2047
+/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:2059
+/home/vagrant/tdd/routes/web.php:19
 /home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Route.php:237
 /home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Route.php:207
 /home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Router.php:695
