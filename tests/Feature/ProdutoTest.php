@@ -23,7 +23,7 @@ class ProdutoTest extends TestCase
             'descricao' => $this->faker->sentence(),
             'lance_minimo' => $lanceMinimo,
             'ordem' => $this->faker->numberBetween(0, 200),
-            'buyout' => $lanceMinimo * $this->faker->randomFloat(2, 1.5, 10)
+            'valor_buyout' => $lanceMinimo * $this->faker->randomFloat(2, 1.5, 10)
         ];
 
         $response = $this->post('/produtos', $attrs);
