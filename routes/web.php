@@ -24,4 +24,7 @@ Route::post('/produtos', function () {
     ]));
 });
 
-route::get('/produtos', function () {});
+route::get('/produtos', function () {
+    $produtos = Produto::all();
+    return view('produtos.index', compact('produtos'));
+});
