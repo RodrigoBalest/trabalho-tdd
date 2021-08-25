@@ -23,3 +23,5 @@ Route::post('/produtos', function () {
         'valor_buyout'
     ]));
 });
+
+route::get('/produtos', function () {});
