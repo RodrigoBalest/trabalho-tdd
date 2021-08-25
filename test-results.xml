@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.903980">
-    <testsuite name="Feature" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.903980">
-      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.903980">
-        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="4" time="3.903980"/>
+  <testsuite name="" tests="7" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="3.956605">
+    <testsuite name="Feature" tests="7" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="3.956605">
+      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="7" assertions="40" errors="0" warnings="0" failures="0" skipped="0" time="3.956605">
+        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="20" assertions="4" time="3.043204"/>
+        <testcase name="exibe_produto_em_leilao" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="44" assertions="4" time="0.215250"/>
+        <testcase name="nao_aceita_lance_abaixo_do_minimo" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="68" assertions="6" time="0.186699"/>
+        <testcase name="nao_aceita_lance_inferior_ao_maior_lance" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="95" assertions="6" time="0.126288"/>
+        <testcase name="nao_aceita_lance_maior_que_valor_de_buyout" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="124" assertions="6" time="0.124963"/>
+        <testcase name="lance_e_aceito" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="151" assertions="6" time="0.125359"/>
+        <testcase name="lance_e_encerrado_com_valor_de_buyout" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="182" assertions="8" time="0.134843"/>
       </testsuite>
     </testsuite>
   </testsuite>

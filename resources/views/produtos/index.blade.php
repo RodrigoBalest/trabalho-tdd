@@ -10,10 +10,18 @@
 <body>
 <h1>Produtos</h1>
 
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
 <ul>
-@foreach($produtos as $produto)
+@forelse($produtos as $produto)
     <li>{{ $produto->nome }}</li>
-@endforeach
+@empty
+    <li>Nenhum produto disponível para leilão</li>
+@endforelse
 </ul>
 </body>
 </html>

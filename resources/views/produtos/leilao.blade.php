@@ -10,6 +10,18 @@
 <body>
 <h1>Produto em leilão</h1>
 
+@foreach ($errors->all() as $error)
+    <div class="alert alert-danger">
+        {{ $error }}
+    </div>
+@endforeach
+
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
 <h2>{{ $produto->nome }}</h2>
 
 <dl>
@@ -18,6 +30,9 @@
 
     <dt>Lance mínimo</dt>
     <dd>{{ $fmt->formatCurrency($produto->lance_minimo, 'BRL') }}</dd>
+
+    <dt>Maior lance</dt>
+    <dd>{{ $fmt->formatCurrency($produto->maior_lance, 'BRL') }}</dd>
 
     <dt>Valor de <i>Buyout</i></dt>
     <dd>{{ $fmt->formatCurrency($produto->valor_buyout, 'BRL') }}</dd>

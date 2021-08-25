@@ -10,7 +10,7 @@ class Produto extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome', 'descricao', 'lance_minimo', 'ordem', 'valor_buyout'];
+    protected $fillable = ['nome', 'descricao', 'lance_minimo', 'ordem', 'valor_buyout', 'maior_lance'];
 
     protected static function newFactory()
     {
