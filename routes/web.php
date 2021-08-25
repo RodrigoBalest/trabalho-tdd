@@ -22,6 +22,8 @@ Route::post('/produtos', function () {
         'ordem',
         'valor_buyout'
     ]));
+
+    return redirect('/produtos');
 });
 
 route::get('/produtos', function () {
