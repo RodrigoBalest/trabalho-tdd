@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProdutosController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Produto;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +14,6 @@ use App\Models\Produto;
 |
 */
 
-Route::post('/produtos', function () {
-    Produto::create(request([
-        'nome',
-        'descricao',
-        'lance_minimo',
-        'ordem',
-        'valor_buyout'
-    ]));
+Route::post('/produtos', [ProdutosController::class, 'store']);
 
-    return redirect('/produtos');
-});
-
-route::get('/produtos', function () {
-    $produtos = Produto::all();
-    return view('produtos.index', compact('produtos'));
-});
+route::get('/produtos',  [ProdutosController::class, 'index']);

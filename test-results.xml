@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.649957">
-    <testsuite name="Feature" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.649957">
-      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.649957">
-        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="4" time="3.649957"/>
+  <testsuite name="" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.903980">
+    <testsuite name="Feature" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.903980">
+      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="3.903980">
+        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="4" time="3.903980"/>
       </testsuite>
     </testsuite>
   </testsuite>
