@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Produto;
+use NumberFormatter;
 
 class ProdutosController extends Controller
 {
@@ -31,5 +32,13 @@ class ProdutosController extends Controller
         ]));
 
         return redirect('/produtos');
+    }
+
+    public function leilao(Request $request)
+    {
+        $produto = $this->produtos->orderBy('ordem', 'asc')->first();
+        $fmt = new NumberFormatter(config('app.locale'), NumberFormatter::CURRENCY );
+
+        return view('produtos.leilao', compact('produto', 'fmt'));
     }
 }

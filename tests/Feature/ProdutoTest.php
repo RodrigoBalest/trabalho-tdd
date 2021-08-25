@@ -2,8 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Models\Produto;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use NumberFormatter;
 use Tests\TestCase;
 
 class ProdutoTest extends TestCase
@@ -33,5 +35,28 @@ class ProdutoTest extends TestCase
         $this->assertDatabaseHas('produtos', $attrs);
 
         $this->get('/produtos')->assertSee($attrs['nome']);
+    }
+
+    /**
+     * @test
+     * @testdox Exibe produto em leilão
+     */
+    public function exibe_produto_em_leilao()
+    {
+        $this->withoutExceptionHandling();
+
+        $produtos = Produto::factory()->times(30)->create();
+
+        // Pega o produto com menor valor de ordem, ou seja, o próximo a ser leiloado.
+        $produto = Produto::orderBy('ordem', 'asc')->first();
+
+
+        $fmt = new NumberFormatter(config('app.locale'), NumberFormatter::CURRENCY );
+
+        // Vê os dados do produto
+        $this->get('/produtos/em-leilao')
+            ->assertSee($produto->nome)
+            ->assertSee($fmt->formatCurrency($produto->lance_minimo, 'BRL'))
+            ->assertSee($fmt->formatCurrency($produto->valor_buyout, 'BRL'));
     }
 }
