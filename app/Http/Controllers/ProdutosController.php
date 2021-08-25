@@ -41,4 +41,9 @@ class ProdutosController extends Controller
 
         return view('produtos.leilao', compact('produto', 'fmt'));
     }
+
+    public function create()
+    {
+        return view('produtos.create');
+    }
 }

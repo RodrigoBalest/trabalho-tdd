@@ -65,4 +65,23 @@ class LeilaoController extends Controller
                 ->with('success', 'Lance aceito com valor de buyout. Leilão encerrado.');
         }
     }
+
+    public function encerrar()
+    {
+        $produto = $this->produtos->orderBy('ordem', 'asc')->firstOrFail();
+        $pv = $this->produtosVendidos->newInstance([
+            'id' => $produto->getKey(),
+            'nome' => $produto->nome,
+            'descricao' => $produto->descricao,
+            'lance_minimo' => $produto->lance_minimo,
+            'ordem' => $produto->ordem,
+            'valor_buyout' => $produto->valor_buyout,
+            'maior_lance' => $produto->maior_lance
+        ]);
+        $pv->save();
+        $produto->delete();
+
+        return redirect('/produtos')
+            ->with('success', 'Leilão encerrado.');
+    }
 }
