@@ -28,7 +28,7 @@ class ProdutoTest extends TestCase
             'valor_buyout' => $lanceMinimo * $this->faker->randomFloat(2, 1.5, 10)
         ];
 
-        $response = $this->post('/produtos', $attrs);
+        $response = $this->post('/produtos', $attrs)->assertRedirect('/produtos');
 
         $this->assertDatabaseHas('produtos', $attrs);
 
