@@ -1,62 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="3.725372">
-    <testsuite name="Feature" tests="1" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="3.725372">
-      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="1" errors="1" warnings="0" failures="0" skipped="0" time="3.725372">
-        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="1" time="3.725372">
-          <error type="InvalidArgumentException">Tests\Feature\ProdutoTest::um_produto_pode_ser_criado
-InvalidArgumentException: View [produtos.index] not found.
-
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:137
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:79
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/View/Factory.php:138
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:919
-/home/vagrant/tdd/routes/web.php:29
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Route.php:237
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Route.php:207
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Router.php:695
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Router.php:697
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Router.php:672
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Router.php:636
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Routing/Router.php:625
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:166
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:128
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php:21
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php:31
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php:21
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php:40
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php:27
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php:86
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/fruitcake/laravel-cors/src/HandleCors.php:38
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php:39
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:167
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:141
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:110
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php:510
-/home/vagrant/tdd/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php:294
-/home/vagrant/tdd/tests/Feature/ProdutoTest.php:35</error>
-        </testcase>
+  <testsuite name="" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="3.845617">
+    <testsuite name="Feature" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="3.845617">
+      <testsuite name="Tests\Feature\ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="3.845617">
+        <testcase name="um_produto_pode_ser_criado" class="Tests\Feature\ProdutoTest" classname="Tests.Feature.ProdutoTest" file="/home/vagrant/tdd/tests/Feature/ProdutoTest.php" line="18" assertions="2" time="3.845617"/>
       </testsuite>
     </testsuite>
   </testsuite>
