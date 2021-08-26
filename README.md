@@ -18,3 +18,7 @@ ferramentas de testes. Os testes são executados pela ferramenta _phpunit_.
 O comando utilizado para executar os testes a cadaiteração foi o seguinte:
 
 ```php artisan test --testdox --log-junit test-results.xml```
+
+Link para apresentação do teste de aceitação:
+
+https://youtu.be/0RR17_a0ylI
